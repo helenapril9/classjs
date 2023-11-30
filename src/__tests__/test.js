@@ -1,11 +1,8 @@
-import Character from '../app.js';
-import { Daemon } from '../app.js';
+import Daemon from '../daemon.js';
 
-test('CheckType', () =>  {
+
+test('CheckType', () => {
     expect(() => {
-       new Daemon ("Daemon1", "Daemons");
+       new Daemon ("Daemon", "Daemons");
     }).toThrow(); 
 })
-
-
-
